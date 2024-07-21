@@ -8,11 +8,15 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-image: url('background.jpg'); /* Add your background image */
+            background-image: url('weather-bg-img.jpg'); /* Add your background image */
             background-size: cover;
         }
+        h1{
+            color: white;
+        }
+        button{background-color: blue;}
         #weather {
-            margin-top: 20%;
+            margin-top: 10%;
             padding: 20px;
             background: rgba(255, 255, 255, 0.8);
             display: inline-block;
@@ -23,7 +27,8 @@
 <body>
     <h1>Weather Information</h1>
     <input type="text" id="city" placeholder="Enter city name">
-    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="getWeather() ">Get Weather</button>
+    <br>
     <div id="weather"></div>
 
     <script src="script.js"></script>
